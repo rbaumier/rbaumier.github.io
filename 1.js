@@ -1,0 +1,13 @@
+horseman
+  .open('https://accounts.google.com')
+  .type('input[name="Email"]', 'labo.bringr@gmail.com')
+  .type('input[name="Passwd"]', 'NOPE')
+  .click('input[name="signIn"]')
+  .waitForNextPage()
+  .open('https://plus.google.com')
+  .waitForNextPage()
+  .click('.oqa')
+  .waitForSelector('.df.b-K.b-K-Xb.URaP8.editable')
+  .type('.df.b-K.b-K-Xb.URaP8.editable', "coucou")
+  .type('input[id="sbdp"]', 'Public,')
+  .click('.d-k-l.b-c.b-c-Ba.qy.jt')
